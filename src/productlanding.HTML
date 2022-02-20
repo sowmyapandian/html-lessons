@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMSUNG TELEVISION</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="Logo">SAMSUNG</a>
+        <nav class="navbar">
+            <a href="https://www.samsung.com/in/support/tv-audio-video/what-is-samsung-smart-tv/#:~:text=Samsung%20SMART%20TV%20is%20a,within%20a%20television%20set%20unit.">Home</a>
+            <a href="https://www.samsung.com/in/info/privacy/smarttv/">About</a>
+            <a href="https://www.expertreviews.co.uk/tvs/1404672/samsung-tv-model-numbers-every-tv-series-explained">Category</a>
+            <a href="https://www.samsung.com/levant/tvs/all-tvs/">Product</a>
+            <a href="https://www.tothenew.com/blog/introduction-to-samsung-smart-tv/">Blogs</a>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="content">
+            <h3>New Samsung Televisions </h3>
+            <p>Bright, rich colours await. Wide Colour Enhancer improves your image quality and uncovers details with
+                colours as they were meant to be seen.</p>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="image">
+            <img class="tv active" src="../images/tv.jpeg" alt="Samsung">
+            <img class="tv" src="../images/tv1.jpg" alt="Samsung">
+            <img class="tv" src="../images/tv2.jpeg" alt="Samsung">
+        </div>
+
+        <div class="left" onclick="prev()">
+            < </div>
+                <div class="right" onclick="next()"> > </div>
+
+    </section>
+    <script>
+
+        let sheos = document.querySelectorAll('.tv');
+        let index = 0;
+
+        function next() {
+            sheos[index].classList.remove('active');
+            index = (index + 1) % sheos.length;
+            sheos[index].classList.add('active');
+        }
+
+        function prev() {
+            sheos[index].classList.remove('active');
+            index = (index - 1 + sheos.length) % sheos.length;
+            sheos[index].classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
