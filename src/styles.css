@@ -132,4 +132,84 @@ header .navbar a:hover{
     background-color: rgb(20, 209, 121);
     color: rgb(15, 36, 224);
 }
+.graph{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 9%;
+    position: relative;
+    overflow-y: hidden;
+}
 
+.graph.hello{
+    flex:1 1 400px;
+}
+
+.graph.try{
+    flex:1 1 400px;
+    position: relative;
+}
+
+
+
+.graph .hello h3{
+    color:#333;
+    font-size:50px;
+} 
+
+.graph .hello p{
+    color:#666;
+    font-size: 17px;
+    padding:5px 0;
+}
+
+.graph.ok{
+    flex:1 1 400px;
+}
+
+.graph.sure{
+    flex:1 1 400px;
+    position: relative;
+}
+
+
+
+.graph .ok h3{
+    color:#333;
+    font-size:50px;
+} 
+
+.graph .ok p{
+    color:#666;
+    font-size: 17px;
+    padding:5px 0;
+}
+
+.footer{
+    margin:100px 0 0 0;
+    background: #333;
+    padding: 100px 100px;
+}
+
+.footer .main-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:2rem;
+}
+
+.main-container div h4{
+    color: rgb(41,100,177);
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.main-container div li{
+    cursor: pointer;
+    margin: 3px 0;
+}
+
+hr{
+    margin:10px 0;
+    opacity: .4;
+}
