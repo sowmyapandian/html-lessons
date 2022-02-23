@@ -1,0 +1,29 @@
+div{
+    width: 500px;
+    height: 500px;
+    border: 5px solid red;
+    color: aquamarine;
+    background-image:url(../../images/h1.jpg);
+    margin-top: 100px auto;
+}   
+#div1{
+    width: 500px;
+    height: 500px;
+    border: 5px solid red;
+    color: aquamarine;
+    background-image:url(../../images/h2.jpg);
+    margin-top: 100px auto;
+    background-size: 200px;
+}
+
+#div2{
+    width: 500px;
+    height: 500px;
+    border: 5px solid red;
+    color: aquamarine;
+    background-image:url(../../images/kalam.jpg);
+    margin-top: 100px auto;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

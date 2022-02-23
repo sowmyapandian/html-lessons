@@ -1,0 +1,23 @@
+div{
+    text-align: right;
+}
+
+p{
+    background-color: #008000;
+    color: firebrick;
+    font-size: 25px;
+    text-align: center;
+}
+
+div p{
+    display: inline;
+    background-color: #008000;
+    color: firebrick;
+    font-size: 25px;
+    text-align: right;
+}
+
+h1{
+    font-family: 'montserrat',sans-serif;
+    font-weight: bold;
+}
