@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    background-image: url(./images/ind.jpg);
 }
 .grid{
     display: grid;
