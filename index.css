@@ -9,17 +9,17 @@
     margin: 20px;
 }
 .html-lessons{
-    background-color: black;
+    background-color: darkolivegreen;
 }
 
 .challenges{
-    background-color: blueviolet;
+    background-color: thistle;
     grid-column :2/3;
     grid-row :1/2;
   }
 
 .styles{
-    background-color:aquamarine;
+    background-color: darkgray;
     grid-column: 3/4;
     grid-row: 1/3;
 }  
@@ -28,7 +28,7 @@
     color: white;
 }
 .javascript{
-    background-color: blue;
+    background-color: darkcyan;
     grid-row:1/4;
     grid-column: 4/4;
 
