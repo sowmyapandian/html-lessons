@@ -18,13 +18,13 @@ body{
 }
 
 .challenges{
-    background-color: thistle;
+    background-color: darkcyan;
     grid-column :2/3;
     grid-row :1/2;
   }
 
 .styles{
-    background-color: darkgray;
+    background-color: yellowgreen;
     grid-column: 3/4;
     grid-row: 1/3;
 }  
