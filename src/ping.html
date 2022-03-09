@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+	/>
+  <link rel="stylesheet" href="ping.css" />
+  <link rel="stylesheet" href="ping2.css" />
+  <title>Ping coming soon page</title>
+</head>
+<body>
+  <header class="header">
+    <img class="header__logo" src="../images/logos2.svg" alt="PING. logo" />
+    <h1 class="header__title">
+      <span class="light-font">We are launching</span> soon!
+    </h1>
+    <p class="header__description">
+      Subscribe and get notified
+    </p>
+  </header>
+  <main class="main-content">
+    <form class="form" novalidate="true">
+      <input
+        class="form__input"
+        type="text"
+        placeholder="Your email address..."
+        pattern="^([A-Za-z\d.-]+)@([a-z\d]+)(\.[a-z]{2,24}){1,8}$"
+        required
+      >
+      <button class="form__button">Notify me</button>
+    </form>
+    <img class="main-content__image" src="../images/illustration-dashboard.png" alt="Illustrated dashboard">
+  </main>
+  <footer class="footer">
+    <div class="socials">
+      <a class="socials__icon-container" href="https://www.facebook.com/" target="_blank">
+        <span class="socials__icon fab fa-facebook-f"></span>
+      </a>
+      <a class="socials__icon-container" href="https://twitter.com/" target="_blank">
+        <span class="socials__icon fab fa-twitter"></span>
+      </a>
+      <a class="socials__icon-container" href="https://www.instagram.com/" target="_blank">
+        <span class="socials__icon fab fa-instagram"></span>
+      </a>
+    </div>
+    <p class="copyright">
+      &copy; Copyright Ping. All rights reserved.
+    </p>
+   
+  </footer>
+  <script src="ping.js"></script>
+</body>
+</html>
