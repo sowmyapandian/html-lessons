@@ -1,11 +1,11 @@
 :root {
     /* Primary */
     --Button-ios-shadow: hsl(171, 66%, 60%);
-    --Strong-cyan: hsl(171, 66%, 42%);
-    --Light-blue: hsl(233, 100%, 69%);
     --Footer-background: hsl(201, 11%, 97%);
     --Footer-hover: hsl(171, 68%, 48%);
-  
+    --Light-blue: hsl(233, 100%, 69%);
+    --Strong-cyan: hsl(171, 66%, 42%);
+
     /* Neutral */
     --Dark-grayish-blue: hsl(210, 10%, 33%);
     --Grayish-blue: hsl(201, 11%, 66%);
@@ -20,24 +20,24 @@
   
 
   .title {
-    margin-bottom: 1rem;
-    font-weight: 600;
     color: var(--Dark-grayish-blue);
+    font-weight: 600;
+    margin-bottom: 1rem;
   }
   
   .buttons {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1.25rem;
   }
   
   .buttons a {
-    padding: 0.9rem 4.4rem;
-    color: var(--White);
-    border-radius: 30px;
     border-bottom: 3px solid hsla(0, 0%, 25%, 20%);
+    border-radius: 30px;
+    color: var(--White);
     font-weight: 600;
+    padding: 0.9rem 4.4rem;
     transition: 400ms;
   }
   
@@ -61,22 +61,22 @@
   
 
   #header {
-    padding-top: 5.875rem;
-    margin-bottom: 10rem;
     background-image: url("../images/bg-header-mobile7.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    margin-bottom: 10rem;
+    padding-top: 5.875rem;
   }
   
   #header .header__content {
-    margin: 0 1.375rem;
     display: grid;
+    margin: 0 1.375rem;
     place-content: center;
   }
   
   #header .header__logo img {
-    width: 6.25rem;
     margin-bottom: 3.25rem;
+    width: 6.25rem;
   }
   
   #header .header__text h1 {
@@ -136,8 +136,8 @@
   }
   
   #workflow img {
-    width: 2.3rem;
     margin-bottom: 2.063rem;
+    width: 2.3rem;
   }
   
   #workflow h3 {
@@ -149,15 +149,15 @@
   }
   
   #brands-logos .brands-logos__container {
-    display: flex;
     align-items: center;
+    display: flex;
     flex-direction: column;
     gap: 3.5rem;
   }
   
   #brands-logos img {
-    width: 7.3rem;
     transition: transform 250ms ease-in;
+    width: 7.3rem;
   }
   
   #brands-logos img:hover {
@@ -182,8 +182,8 @@
   }
   
   #footer .footer__logo img {
-    width: 2.813rem;
     margin-bottom: 2.125rem;
+    width: 2.813rem;
   }
   
   #footer .footer__help ul {
@@ -207,14 +207,14 @@
   
   #footer .footer__socials {
     display: flex;
-    justify-content: center;
     gap: 2.1rem;
+    justify-content: center;
   }
   
   #footer .footer__socials a i {
-    transition: color 500ms;
-    font-size: 1.5rem;
     color: var(--Dark-grayish-blue);
+    font-size: 1.5rem;
+    transition: color 500ms;
   }
   
   #footer .footer__socials a i:hover {
@@ -231,18 +231,15 @@
   }
   
   @media screen and (min-width: 48rem) {
-    /* global styles*/
     p {
       font-size: 1.14rem;
     }
   
-    /* variables */
     :root {
       --Main-title: 600 2.7rem "Bai Jamjuree", sans-serif;
       --Title: 600 2.3rem "Bai Jamjuree", sans-serif;
     }
-  
-    /* reusable classes */
+
     .buttons {
       flex-direction: row;
       justify-content: center;
@@ -256,14 +253,13 @@
       margin: 0 1.5rem;
     }
   
-    /* styles */
     #header {
       padding-top: 8rem;
     }
   
     #header .header__logo img {
-      width: 7.875rem;
       margin-bottom: 4.063rem;
+      width: 7.875rem;
     }
   
     #header .header__text {
@@ -288,9 +284,9 @@
   
     #brands-logos .brands-logos__container {
       display: flex;
-      justify-content: center;
       flex-direction: row;
       gap: 2.3rem;
+      justify-content: center;
     }
   
     #brands-logos img {
@@ -306,8 +302,8 @@
     }
   
     #clipboard .clipboard__text p {
-      width: 41rem;
       margin: 0 auto;
+      width: 41rem;
     }
   
     #footer {
@@ -321,9 +317,9 @@
     }
   
     #footer .footer__container {
+      align-items: center;
       display: flex;
       justify-content: space-between;
-      align-items: center;
     }
   
     #footer .footer__help {
@@ -331,10 +327,10 @@
     }
   
     #footer .footer__help ul {
+      column-gap: 3.4rem;
       display: grid;
       grid-template-columns: [start] 1fr [middle-1] 1fr [middle-2] 1fr [end];
       row-gap: 1rem;
-      column-gap: 3.4rem;
     }
   
     #footer .footer__help ul li:nth-child(3) {
@@ -359,11 +355,10 @@
   }
   
   @media screen and (min-width: 62rem) {
-    /* layout */
     .wrapper {
+      margin: 0 auto;
       max-width: 62.5rem;
       overflow: hidden;
-      margin: 0 auto;
     }
   
     #details .wrapper {
@@ -371,13 +366,13 @@
     }
   
     #details .details__container {
-      display: flex;
       align-items: center;
+      display: flex;
       gap: 3rem;
+      margin: 0;
+      max-width: 78rem;
       overflow: hidden;
       text-align: left;
-      max-width: 78rem;
-      margin: 0;
     }
   
     #details .details__image {
@@ -386,9 +381,9 @@
     }
   
     #details .details__image img {
+      left: -2rem;
       margin: 0;
       position: relative;
-      left: -2rem;
     }
   
     #details .details__cards {
@@ -401,8 +396,8 @@
     }
   
     #more .more__text {
-      width: 45rem;
       margin: 0 auto 7.25rem;
+      width: 45rem;
     }
   
     #workflow {
@@ -411,8 +406,8 @@
   
     #workflow .workflow__cards {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
       gap: 2rem;
+      grid-template-columns: 1fr 1fr 1fr;
     }
   
     #workflow .workflow__cards img {
@@ -441,10 +436,9 @@
   }
   
   @media screen and (min-width: 75rem) {
-    /* layout */
     .wrapper {
-      max-width: 75rem;
       margin: 0 auto;
+      max-width: 75rem;
     }
   
     #details .details__container {

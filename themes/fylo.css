@@ -1,19 +1,19 @@
 *{
+    box-sizing: border-box;
     margin:0;
     padding:0;
-    box-sizing: border-box;
 }
 
 body{
-    background-image: url(images/bg-desktop.png);
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(../images/bg-desktop3.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
-    background-color: hsl(229, 57%, 11%);
-    height: 100vh;
     color: hsl(243, 100%, 93%);
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
+     height: 100vh;
 }
 
 .container{
@@ -22,10 +22,10 @@ body{
 }
 
 .wrap{
-    width: 100%;
     display: flex;
     margin: 0 auto;
     position: relative;
+    width: 100%;
 }
 
 .box{
@@ -34,28 +34,28 @@ body{
 }
 
 .left{
-    width: 40%;
+    border-radius: 10px 100px 10px 10px;
     height: 200px;
     padding: 30px 20px 20px;
-    border-radius: 10px 100px 10px 10px;
+    width: 40%;
 }
 
 .left-item{
+    display: flex; 
     padding: 15px;
-    display: flex;
 }
 
 .files{
     background: hsl(229, 57%, 11%);
-    margin:0 15px 0 0;
     border-radius: 10px;
+    margin:0 15px 0 0;
     padding: 5px 10px;
 }
 
 .icons{
-    width: 25px;
     display: block;
     margin:5px auto;
+    width: 25px;
 }
 
 .icon-2{
@@ -63,38 +63,38 @@ body{
 }
 
 .right{
-    position: relative;
-    width: 60;
     border-radius: 10px;
-    padding: 30px;
     height: 150px;
     margin-top: 45px;
+    padding: 30px;
+    position: relative;
+    width: 60;
 }
 
 .loading{
-    width: 100%;
     background: hsl(229, 57%, 11%);
-    border-radius: 50px;
     border: hsl(229, 57%, 11%);
+    border-radius: 50px;
     outline: none;
+    width: 100%;
 }
 
 .pink-gradient{
-    position: relative;
-    width: 80%;
-    padding: 2px;
     border-radius: 50px;
     background-image: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    padding: 2px;
+    position: relative;
+    width: 80%;
 }
 
 .white-dot{
     background-color: #fff;
-    width: 2vmin;
-    height: 2vmin;
     border-radius: 100%;
-    position: relative;
     left: 96%;
+    height: 2vmin;
+    position: relative;
     top:0;
+    width: 2vmin;
 }
 
 .top{
@@ -107,36 +107,35 @@ body{
 }
 
 .chat{
-    color: hsl(229, 57%, 11%);
+    background-color: #fff;
+    border-radius: 10px 10px 0 10px; color: hsl(229, 57%, 11%);
     font-weight: 700;
     font-size: 32px;
     padding: 15px 30px;
-    background-color: #fff;
-    border-radius: 10px 10px 0 10px;
     position: absolute;
-    top:-50px;
     right: 40px;
+    top:-50px;
     z-index: 1;
 }
 
 .chat:after{
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    top:60%;
-    border-top:solid 50px #fff;
+    border-bottom: solid 10px transparent;
     border-left:solid 50px transparent;
     border-right: solid 0px transparent;
-    border-bottom: solid 10px transparent;
+    border-top:solid 50px #fff;
+    content: "";
+    display: block;
+    height: 0;
     left: 114px;
+    position: absolute;
+    width: 0;
+    top:60%;
     z-index: -1;
 }
 
 span{
-    font-size: 12px;
     color: hsl(229, 7%, 55%);
+    font-size: 12px;
 }
 
 .attribution{font-size: 11px; text-align: center;}
@@ -155,10 +154,10 @@ span{
     }
     
     .wrap{
-        width: 100%;
         display: block;
         margin: 0;
         position: relative;
+        width: 100%;
     }
     
     .box{
@@ -166,8 +165,8 @@ span{
     }
     
     .left{
-        width: 100%;
         padding: 30px;
+        width: 100%;
     }
     
     .left-item{
@@ -175,24 +174,24 @@ span{
     }
     
     .right{
+        padding: 25px;
         position: relative;
         width: 100%;
-        padding: 25px;
     }
     
     .white-dot{
-        position: relative;
         left:96%;
+        position: relative;
         top:0;
     }
     
     .chat{
-        padding: 10px 20px;
         background-color: #fff;
         border-radius: 10px;
+        padding: 10px 20px;
         position: absolute;
-        top: 80%;
         right: 30%;
+        top: 80%;
     }
     
     .chat:after{
