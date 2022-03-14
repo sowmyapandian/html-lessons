@@ -19,7 +19,7 @@ header {
   min-height: 90vh;
   min-width: 430px;
   background-color: #ce4049;
-  background-image: url(../images/bg-pattern-intro-desktops3.svg);
+  background-image: url(../../../images/bg-pattern-intro-desktops3.svg);
   background-position: -50vh -30vh;
   background-size: 195vh;
   background-repeat: repeat;
@@ -373,7 +373,7 @@ main .content-wrapper .content-text.bg_pattern {
   width: 100%;
   background-color: #1c1d29;
   background-color: linear-gradient(90deg, #1c1d29 0%, #34374f 50%, #3a3d5c 100%);
-  background-image: url(../images/bg-pattern-circless3.svg);
+  background-image: url(../../../images/bg-pattern-circless3.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -25vh -42vh;
