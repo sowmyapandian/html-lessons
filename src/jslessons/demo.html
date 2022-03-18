@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <script src="scripts/demo.js?v=1"></script>
+</head>
+<body>
+    <p>
+        <label for="firstvalue">X:</label>
+        <input id="firstvalue" type="text" placeholder="enter your number"/>
+    </p>
+    <p>
+        <label for="secondvalue">Y:</label>
+        <input id="secondvalue" type="text" placeholder="enter your number"/>
+    </p>
+    <p>
+        <input type="button" value="ok" onclick="addition()"/>   
+        <input type="button" value="+" onclick="sum()"/>
+        <input type="button" value="add again" 
+        onclick="add(40,30)"/>  
+        <input type="button" value="add with parameters" 
+        onclick="add(document.getElementById('firstvalue').value,
+        document.getElementById('secondvalue').value)"/>
+    </p>
+    <p>
+        <input type="button" value="problem1" onclick="problem1()"/>
+        <input type="button" value="problem2" onclick="problem2()"/>
+        <input type="button" value="problem3" onclick="problem3()"/>
+        <input type="button" value="printdigits" onclick="printdigits(document.getElementById('firstvalue').value)"/>
+    </p>
+    <div id="result"></div>
+
+</body>
+</html>

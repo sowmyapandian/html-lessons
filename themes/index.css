@@ -1,20 +1,23 @@
-body{
+body {
     background-image: url(../images/indexindex2.jpg);
     background-image: transparent;
     text-decoration: none;
 }
-.container{
+.container {
      margin-right: 20px;
      margin-top: 30px;
      text-align: right;
      text-decoration: none;
 }
-.card{
-    color: silver;
+.card {
+    color: orange;
     margin-left: 20px;
     text-align: center;
     text-decoration: none;
 }
-.card h2{
+.card h2 {
     color:white;
+}
+.container h2 {
+    color:palevioletred;
 }
