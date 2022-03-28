@@ -1,200 +1,190 @@
 *{
-    box-sizing: border-box;
+      box-sizing: border-box;
+
     margin:0;
     padding:0;
-}
-
+  }
 body{
-    background-color: hsl(229, 57%, 11%);
-    background-image: url(../images/bg-desktop3.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-    color: hsl(243, 100%, 93%);
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    height: 100vh;
-}
-
+      background-color: hsl(229, 57%, 11%);
+      background-image: url(../images/bg-desktop3.png);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+      color: hsl(243, 100%, 93%);
+      font-family: 'Raleway', sans-serif;
+      font-size: 14px;
+      height: 100vh;
+  }
 .container{
-    max-width: 1930px;
-    padding: 13% 15% 20%;
-}
-
+      max-width: 1930px;
+      padding: 13% 15% 20%;
+  }
 .wrap{
-    display: flex;
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-}
-
+      display: flex;
+      margin: 0 auto;
+      position: relative;
+      width: 100%;
+  }
 .box{
-    background-color: hsl(228, 56%, 26%);
-    margin: 0 20px;
-}
-
+      background-color: hsl(228, 56%, 26%);
+      margin-top: 5px;
+      margin: 0 20px;
+  }
 .left{
-    border-radius: 10px 100px 10px 10px;
-    height: 200px;
-    padding: 30px 20px 20px;
-    width: 40%;
-}
-
+      border-radius: 10px 100px 10px 10px;
+      height: 170px;
+      margin-top: 0;
+      padding: 30px 20px 20px;
+      width: 30%;
+  }
 .left-item{
-    display: flex; 
-    padding: 15px;
-}
-
+      display: flex;
+      height:60px;
+      padding: 10px;
+  }
 .files{
-    background: hsl(229, 57%, 11%);
-    border-radius: 10px;
-    margin:0 15px 0 0;
-    padding: 5px 10px;
-}
-
+      background: hsl(229, 57%, 11%);
+      border-radius: 10px;
+      margin:0 15px 0px 0;
+      padding: 5px 10px;
+  }
 .icons{
-    display: block;
-    margin:5px auto;
-    width: 25px;
-}
-
+      display: block;
+      margin:5px auto;
+      padding-top: 0;
+      width: 25px;
+  }
 .icon-2{
-    padding-top: 4px;
-}
-
+      padding-top: 2px;
+  }
 .right{
-    border-radius: 10px;
-    height: 150px;
-    margin-top: 45px;
-    padding: 30px;
-    position: relative;
-    width: 60;
-}
-
+      border-radius: 10px;
+      bottom: 0;
+      height: 130px;
+      margin-top: 40px;
+      padding: 20px;
+      position: relative;
+      width: 60%;
+  }
 .loading{
-    background: hsl(229, 57%, 11%);
-    border: hsl(229, 57%, 11%);
-    border-radius: 50px;
-    outline: none;
-    width: 100%;
-}
-
+      background: hsl(229, 57%, 11%);
+      border-radius: 50px;
+      border: hsl(229, 57%, 11%);
+      outline: none;
+      width: 100%;
+  }
 .pink-gradient{
-    border-radius: 50px;
-    background-image: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
-    padding: 2px;
-    position: relative;
-    width: 80%;
-}
-
+      background-image: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+      border-radius: 50px;
+      padding: 2px;
+      position: relative;
+      width: 80%;
+  }
 .white-dot{
-    background-color: #fff;
-    border-radius: 100%;
-    left: 96%;
-    height: 2vmin;
-    position: relative;
+      background-color: #fff;
+      border-radius: 100%;
+      height: 2vmin;
+      left: 96%;
+      position: relative;
+      width: 2vmin;
+
     top:0;
-    width: 2vmin;
-}
-
+  }
 .top{
-    display: flex;
-    justify-content: space-between;
-}
-
+      display: flex;
+      justify-content: space-between;
+  }
 .right-item{
-    margin: 10px 0;
-}
-
+      align-content: flex-end;
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+  }
 .chat{
-    background-color: #fff;
-    border-radius: 10px 10px 0 10px; color: hsl(229, 57%, 11%);
-    font-weight: 700;
-    font-size: 32px;
-    padding: 15px 30px;
-    position: absolute;
-    right: 40px;
-    top:-50px;
-    z-index: 1;
-}
-
+      background-color: #fff;
+      border-radius: 10px 10px 0 10px;
+      color: hsl(229, 57%, 11%);
+      font-size: 32px;
+      font-weight: 700;
+      padding: 15px 30px;
+      position: absolute;
+      right: 40px;
+      top:-50px;
+      z-index: 1;
+  }
 .chat:after{
-    border-bottom: solid 10px transparent;
-    border-left:solid 50px transparent;
-    border-right: solid 0px transparent;
-    border-top:solid 50px #fff;
-    content: "";
-    display: block;
-    height: 0;
-    left: 114px;
-    position: absolute;
-    width: 0;
-    top:60%;
-    z-index: -1;
-}
-
+      border-bottom: solid 10px transparent;
+      border-left:solid 50px transparent;
+      border-right: solid 0px transparent;
+      border-top:solid 50px #fff;
+      content: "";
+      display: block;
+      height: 0;
+      left: 114px;
+      position: absolute;
+      top:60%;
+      width: 0;
+      z-index: -1;
+  }
 span{
-    color: hsl(229, 7%, 55%);
-    font-size: 12px;
+      color: hsl(229, 7%, 55%);
+      font-size: 12px;
+  }
+.attribution{
+font-size: 11px;
+text-align: center;
 }
+.attribution a{
 
-.attribution{font-size: 11px; text-align: center;}
-.attribution a{color:hsl(243, 100%, 93%)};
-
+color:hsl(243, 100%, 93%)
+};
 @media screen and(max-width:799px){
+      .chat:after{
+          display: none;
+      }
+
     body{
-        background-image: url(../images/bg-mobile3.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100%;
-    }
-    
+          background-image: url(../images/bg-mobile3.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100%;
+      }
     .container{
-        padding: 20% 7%;
-    }
-    
+          padding: 20% 7%;
+      }
     .wrap{
-        display: block;
-        margin: 0;
-        position: relative;
-        width: 100%;
-    }
-    
+          display: block;
+          margin: 0;
+          position: relative;
+          width: 100%;
+      }
     .box{
-        margin: 20px 0;
-    }
-    
+          margin: 20px 0;
+      }
     .left{
-        padding: 30px;
-        width: 100%;
-    }
-    
+          padding: 30px;
+          width: 100%;
+      }
     .left-item{
-        padding: 15px;
-    }
-    
+          padding: 15px;
+      }
     .right{
-        padding: 25px;
-        position: relative;
-        width: 100%;
-    }
-    
+          padding: 25px;
+          position: relative;
+          width: 100%;
+      }
     .white-dot{
-        left:96%;
-        position: relative;
+          left:96%;
+          position: relative;
+
         top:0;
-    }
-    
+      }
     .chat{
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 10px 20px;
-        position: absolute;
-        right: 30%;
-        top: 80%;
+          background-color: #fff;
+          border-radius: 10px;
+          padding: 10px 20px;
+          position: absolute;
+          right: 30%;
+          top: 80%;
+      }
     }
-    
-    .chat:after{
-        display: none;
-    }
-}

@@ -1,463 +1,370 @@
 :root {
+      --Button-ios-shadow: hsl(171, 66%, 60%);
+      --Dark-grayish-blue: hsl(210, 10%, 33%);
+      --Footer-background: hsl(201, 11%, 97%);
+      --Footer-hover: hsl(171, 68%, 48%);
+      --Grayish-blue: hsl(201, 11%, 66%);
+      --Light-blue: hsl(233, 100%, 69%);
+      --Main-title: 600 2.1rem "Bai Jamjuree", sans-serif;
+      --Strong-cyan: hsl(171, 66%, 42%);
+      --Title-details-cards: 1.6rem;
+      --Title-workflow-cards: 1.5rem;
+      --Title: 600 1.8rem "Bai Jamjuree", sans-serif;
+      --White: hsl(0, 0%, 98%);
+
     /* Primary */
-    --Button-ios-shadow: hsl(171, 66%, 60%);
-    --Footer-background: hsl(201, 11%, 97%);
-    --Footer-hover: hsl(171, 68%, 48%);
-    --Light-blue: hsl(233, 100%, 69%);
-    --Strong-cyan: hsl(171, 66%, 42%);
-
     /* Neutral */
-    --Dark-grayish-blue: hsl(210, 10%, 33%);
-    --Grayish-blue: hsl(201, 11%, 66%);
-    --White: hsl(0, 0%, 98%);
-  
     /* fonts */
-    --Main-title: 600 2.1rem "Bai Jamjuree", sans-serif;
-    --Title: 600 1.8rem "Bai Jamjuree", sans-serif;
-    --Title-details-cards: 1.6rem;
-    --Title-workflow-cards: 1.5rem;
   }
-  
-
   .title {
-    color: var(--Dark-grayish-blue);
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  
+      color: var(--Dark-grayish-blue);
+      font-weight: 600;
+      margin-bottom: 1rem;
+  }  
   .buttons {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-  }
-  
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+  }  
   .buttons a {
-    border-bottom: 3px solid hsla(0, 0%, 25%, 20%);
-    border-radius: 30px;
-    color: var(--White);
-    font-weight: 600;
-    padding: 0.9rem 4.4rem;
-    transition: 400ms;
-  }
-  
+      border-bottom: 3px solid hsla(0, 0%, 25%, 20%);
+      border-radius: 30px;
+      color: var(--White);
+      font-weight: 600;
+      padding: 0.9rem 4.4rem;
+      transition: 400ms;
+  }  
   .buttons a:hover {
-    opacity: 0.72;
-  }
-  
+      opacity: 0.72;
+  }  
   .buttons .button--ios {
-    background: var(--Strong-cyan);
-    box-shadow: 0px 10px 27px -12px var(--Button-ios-shadow);
-  }
-  
+      background: var(--Strong-cyan);
+      box-shadow: 0px 10px 27px -12px var(--Button-ios-shadow);
+  }  
   .buttons .button--mac {
-    background: var(--Light-blue);
-  }
-  
-  
+      background: var(--Light-blue);
+  }  
   .wrapper {
-    margin: 0 1.375rem;
+      margin: 0 1.375rem;
   }
-  
-
   #header {
-    background-image: url("../images/bg-header-mobile7.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-bottom: 10rem;
-    padding-top: 5.875rem;
-  }
-  
-  #header .header__content {
-    display: grid;
-    margin: 0 1.375rem;
-    place-content: center;
-  }
-  
-  #header .header__logo img {
-    margin-bottom: 3.25rem;
-    width: 6.25rem;
-  }
-  
-  #header .header__text h1 {
-    font: var(--Main-title);
-  }
-  
-  #header .header__text p {
-    margin-bottom: 2.188rem;
-  }
-  
-  #details {
-    padding-bottom: 13rem;
-  }
-  
-  #details .details__text {
-    margin-bottom: 4.375rem;
-  }
-  
-  #details .details__container {
-    margin: 0 1.375rem;
-  }
-  
-  #details .details__image img {
-    margin-bottom: 4rem;
-  }
-  
-  #details .details__cards {
-    display: flex;
-    flex-direction: column;
-    gap: 3.86rem;
-  }
-  
-  #details h3 {
-    font-size: var(--Title-details-cards);
-  }
-  
-  #more {
-    padding-bottom: 6.563rem;
-  }
-  
-  #more .more__text {
-    margin-bottom: 3.313rem;
-  }
-  
-  #workflow {
-    padding-bottom: 8rem;
-  }
-  
-  #workflow .workflow__text {
-    margin-bottom: 4.5rem;
-  }
-  
-  #workflow .workflow__cards {
-    display: flex;
-    flex-direction: column;
-    gap: 3.3rem;
-  }
-  
-  #workflow img {
-    margin-bottom: 2.063rem;
-    width: 2.3rem;
-  }
-  
-  #workflow h3 {
-    font-size: var(--Title-workflow-cards);
-  }
-  
-  #brands-logos {
-    padding-bottom: 11rem;
-  }
-  
-  #brands-logos .brands-logos__container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 3.5rem;
-  }
-  
-  #brands-logos img {
-    transition: transform 250ms ease-in;
-    width: 7.3rem;
-  }
-  
-  #brands-logos img:hover {
-    transform: scale(0.9);
-  }
-  
-  #clipboard {
-    padding-bottom: 8.125rem;
-  }
-  
-  #clipboard .clipboard__text {
-    margin-bottom: 2.375rem;
-  }
-  
-  #clipboard .clipboard__text p {
-    font-size: 1.08rem;
-  }
-  
-  #footer {
-    background: var(--Footer-background);
-    padding: 2.375rem 5.313rem;
-  }
-  
-  #footer .footer__logo img {
-    margin-bottom: 2.125rem;
-    width: 2.813rem;
-  }
-  
-  #footer .footer__help ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1.563rem;
-  }
-  
-  #footer .footer__help {
-    margin-bottom: 2.5rem;
-  }
-  
-  #footer .footer__help ul li a {
-    color: var(--Dark-grayish-blue);
-    transition: color 500ms;
-  }
-  
-  #footer .footer__help ul li a:hover {
-    color: var(--Footer-hover);
-  }
-  
-  #footer .footer__socials {
-    display: flex;
-    gap: 2.1rem;
-    justify-content: center;
-  }
-  
-  #footer .footer__socials a i {
-    color: var(--Dark-grayish-blue);
-    font-size: 1.5rem;
-    transition: color 500ms;
-  }
-  
-  #footer .footer__socials a i:hover {
-    color: var(--Strong-cyan);
-  }
-  
- 
-  @media screen and (min-width: 36rem) {
-    #header {
-      background-image: url("../images/bg-header-desktop7.png");
+      background-image: url("../images/bg-header-mobile7.png");
       background-repeat: no-repeat;
       background-size: 100%;
+      margin-bottom: 10rem;
+      padding-top: 5.875rem;
+  }  
+  #header .header__content {
+      display: grid;
+      margin: 0 1.375rem;
+      place-content: center;
+  }  
+  #header .header__logo img {
+      margin-bottom: 3.25rem;
+      width: 6.25rem;
+  }  
+  #header .header__text h1 {
+      font: var(--Main-title);
+  }  
+  #header .header__text p {
+      margin-bottom: 2.188rem;
+  }  
+  #details {
+      padding-bottom: 13rem;
+  }  
+  #details .details__text {
+      margin-bottom: 4.375rem;
+  }  
+  #details .details__container {
+      margin: 0 1.375rem;
+  }  
+  #details .details__image img {
+      margin-bottom: 4rem;
+  }  
+  #details .details__cards {
+      display: flex;
+      flex-direction: column;
+      gap: 3.86rem;
+  }  
+  #details h3 {
+      font-size: var(--Title-details-cards);
+  }  
+  #more {
+      padding-bottom: 6.563rem;
+  }  
+  #more .more__text {
+      margin-bottom: 3.313rem;
+  }  
+  #workflow {
+      padding-bottom: 8rem;
+  }  
+  #workflow .workflow__text {
+      margin-bottom: 4.5rem;
+  }  
+  #workflow .workflow__cards {
+      display: flex;
+      flex-direction: column;
+      gap: 3.3rem;
+  }  
+  #workflow img {
+      margin-bottom: 2.063rem;
+      width: 2.3rem;
+  }  
+  #workflow h3 {
+      font-size: var(--Title-workflow-cards);
+  }  
+  #brands-logos {
+      padding-bottom: 11rem;
+  }  
+  #brands-logos .brands-logos__container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+  }  
+  #brands-logos img {
+      transition: transform 250ms ease-in;
+      width: 7.3rem;
+  }  
+  #brands-logos img:hover {
+      transform: scale(0.9);
+  }  
+  #clipboard {
+      padding-bottom: 8.125rem;
+  }  
+  #clipboard .clipboard__text {
+      margin-bottom: 2.375rem;
+  }  
+  #clipboard .clipboard__text p {
+      font-size: 1.08rem;
+  }  
+  #footer {
+      background: var(--Footer-background);
+      padding: 2.375rem 5.313rem;
+  }  
+  #footer .footer__logo img {
+      margin-bottom: 2.125rem;
+      width: 2.813rem;
+  }  
+  #footer .footer__help ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.563rem;
+  }  
+  #footer .footer__help {
+      margin-bottom: 2.5rem;
+  }  
+  #footer .footer__help ul li a {
+      color: var(--Dark-grayish-blue);
+      transition: color 500ms;
+  }  
+  #footer .footer__help ul li a:hover {
+      color: var(--Footer-hover);
+  }  
+  #footer .footer__socials {
+      display: flex;
+      gap: 2.1rem;
+      justify-content: center;
+  }  
+  #footer .footer__socials a i {
+      color: var(--Dark-grayish-blue);
+      font-size: 1.5rem;
+      transition: color 500ms;
+  }  
+  #footer .footer__socials a i:hover {
+      color: var(--Strong-cyan);
+  } 
+  @media screen and (min-width: 36rem) {
+    #header {
+        background-image: url("../images/bg-header-desktop7.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
-  }
-  
+  }  
   @media screen and (min-width: 48rem) {
-    p {
-      font-size: 1.14rem;
+      li:last-child {
+        grid-area: 1 / middle-2 / end;
     }
-  
-    :root {
-      --Main-title: 600 2.7rem "Bai Jamjuree", sans-serif;
-      --Title: 600 2.3rem "Bai Jamjuree", sans-serif;
+      li:nth-child(3) {
+        grid-area: 1 / middle-1 / middle-2;
     }
 
+    p {
+        font-size: 1.14rem;
+    }
+    :root {
+        --Main-title: 600 2.7rem "Bai Jamjuree", sans-serif;
+        --Title: 600 2.3rem "Bai Jamjuree", sans-serif;
+    }
     .buttons {
-      flex-direction: row;
-      justify-content: center;
+        flex-direction: row;
+        justify-content: center;
     }
-  
     .buttons a {
-      padding: 0.9rem 2.2rem;
+        padding: 0.9rem 2.2rem;
     }
-  
     .wrapper {
-      margin: 0 1.5rem;
+        margin: 0 1.5rem;
     }
-  
     #header {
-      padding-top: 8rem;
+        padding-top: 8rem;
     }
-  
     #header .header__logo img {
-      margin-bottom: 4.063rem;
-      width: 7.875rem;
+        margin-bottom: 4.063rem;
+        width: 7.875rem;
     }
-  
     #header .header__text {
-      width: 42rem;
+        width: 42rem;
     }
-  
     #header .header__text p {
-      margin-bottom: 3.25rem;
+        margin-bottom: 3.25rem;
     }
-  
     #details .details__text {
-      margin-bottom: 5.188rem;
+        margin-bottom: 5.188rem;
     }
-  
     #details .details__image img {
-      margin-bottom: 6rem;
+        margin-bottom: 6rem;
     }
-  
     #workflow .workflow__text {
-      margin-bottom: 5rem;
+        margin-bottom: 5rem;
     }
-  
     #brands-logos .brands-logos__container {
-      display: flex;
-      flex-direction: row;
-      gap: 2.3rem;
-      justify-content: center;
+        display: flex;
+        flex-direction: row;
+        gap: 2.3rem;
+        justify-content: center;
     }
-  
     #brands-logos img {
-      width: 7rem;
+        width: 7rem;
     }
-  
     #clipboard {
-      padding-bottom: 9.313rem;
+        padding-bottom: 9.313rem;
     }
-  
     #clipboard .clipboard__text {
-      margin-bottom: 3.313rem;
+        margin-bottom: 3.313rem;
     }
-  
     #clipboard .clipboard__text p {
-      margin: 0 auto;
-      width: 41rem;
+        margin: 0 auto;
+        width: 41rem;
     }
-  
     #footer {
-      padding: 2.375rem 2rem;
-      text-align: left;
+        padding: 2.375rem 2rem;
+        text-align: left;
     }
-  
     #footer .footer__logo img {
-      margin: 0;
-      width: 3.5rem;
+        margin: 0;
+        width: 3.5rem;
     }
-  
     #footer .footer__container {
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
     }
-  
     #footer .footer__help {
-      margin: 0;
+        margin: 0;
     }
-  
     #footer .footer__help ul {
-      column-gap: 3.4rem;
-      display: grid;
-      grid-template-columns: [start] 1fr [middle-1] 1fr [middle-2] 1fr [end];
-      row-gap: 1rem;
+        column-gap: 3.4rem;
+        display: grid;
+        grid-template-columns: [start] 1fr [middle-1] 1fr [middle-2] 1fr [end];
+        row-gap: 1rem;
     }
-  
-    #footer .footer__help ul li:nth-child(3) {
-      grid-area: 1 / middle-1 / middle-2;
-    }
-  
-    #footer .footer__help ul li:last-child {
-      grid-area: 1 / middle-2 / end;
-    }
-  
+    #footer .footer__help ul 
+    #footer .footer__help ul 
     #footer .footer__help ul li a {
-      font-size: 1.1rem;
+        font-size: 1.1rem;
     }
-  
     #footer .footer__socials {
-      gap: 1.36rem;
+        gap: 1.36rem;
     }
-  
     #footer .footer__socials a i {
-      font-size: 1.563rem;
+        font-size: 1.563rem;
     }
-  }
-  
+  }  
   @media screen and (min-width: 62rem) {
     .wrapper {
-      margin: 0 auto;
-      max-width: 62.5rem;
-      overflow: hidden;
+        margin: 0 auto;
+        max-width: 62.5rem;
+        overflow: hidden;
     }
-  
     #details .wrapper {
-      max-width: 45rem;
+        max-width: 45rem;
     }
-  
     #details .details__container {
-      align-items: center;
-      display: flex;
-      gap: 3rem;
-      margin: 0;
-      max-width: 78rem;
-      overflow: hidden;
-      text-align: left;
+        align-items: center;
+        display: flex;
+        gap: 3rem;
+        margin: 0;
+        max-width: 78rem;
+        overflow: hidden;
+        text-align: left;
     }
-  
     #details .details__image {
-      display: flex;
-      flex-basis: 60%;
+        display: flex;
+        flex-basis: 60%;
     }
-  
     #details .details__image img {
-      left: -2rem;
-      margin: 0;
-      position: relative;
+        left: -2rem;
+        margin: 0;
+        position: relative;
     }
-  
     #details .details__cards {
-      flex: 1;
+        flex: 1;
     }
-  
     #more .wrapper {
-      display: grid;
-      place-content: center;
+        display: grid;
+        place-content: center;
     }
-  
     #more .more__text {
-      margin: 0 auto 7.25rem;
-      width: 45rem;
+        margin: 0 auto 7.25rem;
+        width: 45rem;
     }
-  
     #workflow {
-      padding-bottom: 10.375rem;
+        padding-bottom: 10.375rem;
     }
-  
     #workflow .workflow__cards {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-  
     #workflow .workflow__cards img {
-      width: 3rem;
+        width: 3rem;
     }
-  
     #workflow .workflow__cards p {
-      font-size: 1.07rem;
+        font-size: 1.07rem;
     }
-  
     #brands-logos .brands-logos__container {
-      gap: 3.2rem;
+        gap: 3.2rem;
     }
-  
     #brands-logos img {
-      width: 9rem;
+        width: 9rem;
     }
-  
     #footer {
-      padding: 2.375rem 6.3rem;
+        padding: 2.375rem 6.3rem;
     }
-  
     #footer .footer__help ul {
-      column-gap: 5.75rem;
+        column-gap: 5.75rem;
     }
-  }
-  
+  }  
   @media screen and (min-width: 75rem) {
     .wrapper {
-      margin: 0 auto;
-      max-width: 75rem;
+        margin: 0 auto;
+        max-width: 75rem;
     }
-  
     #details .details__container {
-      gap: 6.5rem;
+        gap: 6.5rem;
     }
-  
     #workflow .workflow__cards {
-      gap: 2.438rem;
+        gap: 2.438rem;
     }
-  
     #brands-logos .brands-logos__container {
-      gap: 6rem;
+        gap: 6rem;
     }
-  
     #brands-logos img {
-      width: 10rem;
+        width: 10rem;
     }
-  
     #footer {
-      padding: 2.375rem 10rem;
+        padding: 2.375rem 10rem;
     }
   }

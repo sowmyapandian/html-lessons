@@ -1,23 +1,23 @@
 body {
-    background-image: url(../images/indexindex2.jpg);
-    background-image: transparent;
-    text-decoration: none;
-}
+      background-image: transparent;
+      background-image: url(../images/indexindex2.jpg);
+      text-decoration: none;
+  }
 .container {
-     margin-right: 20px;
-     margin-top: 30px;
-     text-align: right;
-     text-decoration: none;
-}
+       margin-right: 20px;
+       margin-top: 30px;
+       text-align: right;
+       text-decoration: none;
+   }
 .card {
-    color: orange;
-    margin-left: 20px;
-    text-align: center;
-    text-decoration: none;
-}
+      color: orange;
+      margin-left: 20px;
+      text-align: center;
+      text-decoration: none;
+  }
 .card h2 {
-    color:white;
-}
+      color:white;
+  }
 .container h2 {
-    color:palevioletred;
-}
+      color:palevioletred;
+  }

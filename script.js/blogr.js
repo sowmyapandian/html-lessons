@@ -11,10 +11,10 @@ document.getElementById("nav-toggle").addEventListener("click", () => {
   nav_toggle = !nav_toggle;
   if (nav_toggle) {
     nav.style.display = "flex";
-    icon_navbar.src = "./assets/icons/icon-close.svg";
+    icon_navbar.src = "../images/icon-close.svg";
   } else {
     nav.style.display = "none";
-    icon_navbar.src = "./assets/icons/icon-hamburger.svg";
+    icon_navbar.src = "../images/icon-hamburger.svg";
   }
 });
 
@@ -32,8 +32,8 @@ document.getElementById("connect").addEventListener("click", () => {
 window.onload = function () {
   if (screen.width < 1000) {
       console.log(arrows_imgs[0].src)
-    arrows_imgs[0].src = "./assets/icons/icon-arrow-dark.svg";
-    arrows_imgs[1].src = "./assets/icons/icon-arrow-dark.svg";
-    arrows_imgs[2].src = "./assets/icons/icon-arrow-dark.svg";
+    arrows_imgs[0].src = "../images/icon-arrow-darks3.svg";
+    arrows_imgs[1].src = "../images/icon-arrow-darks3.svg";
+    arrows_imgs[2].src = "../images/icon-arrow-dark.svg";
   }
 };

@@ -21,7 +21,8 @@ function addErrorMessage(e) {
   var error_icon = document.createElement("span");
   error_icon.setAttribute("data-id", name);
   error_icon.classList.add("error-icon");
-  error_icon.innerHTML = "<img src='images/icon-error.svg' alt=''>";
+  error_icon.innerHTML = "<img src='../images/icon-error.svg' alt=''>";
+
 
   // Create an error message.
   var error_message = document.createElement("span");

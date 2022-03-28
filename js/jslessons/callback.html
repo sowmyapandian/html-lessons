@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack</title>
+</head>
+<body>
+    <button class="clickMe">
+        ClickMe!
+    </button>
+    <p>
+        <input type="button" value="stop" onClick="stopInterval()" />
+    </p>
+    <script>
+        const button = document.querySelector ('.clickMe');
+        function handleClick() {console.log('Great Clicking!')};
+        // registering the event handler {'handleclick()'} with the event  ('click')
+        button.addEventListener('click',handleClick);
+        const handler1 = function() {
+            console.log('Nice Job!!!');
+        };
+        button.addEventListener('click',handler1);
+        // timer call back
+        const handler2 = () => { console.log('DONE! time to eat!'); };
+        setTimeout(handler2, 3000);
+        // the func will be called after the timeoutperiod
+        // const interval = setInterval(handler2, 2000);
+        // setTimeout(clearTimeout(interval),10000);
+        var interval = setInterval(handler2, 2000);
+        function stopInterval() {
+            clearInterval(interval);
+            console.log('stopped!!!!!');
+        }
+    </script>
+    <!--
+        publisher - a control or a function that raise an event (signal)
+        subscriber - the code / function thet reaches to the event (signal)
+        signal - event (click, textchange, mouse over...)
+        one to many one event can have many subscribers.
+    -->
+</body>
+</html>
